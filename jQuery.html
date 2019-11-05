@@ -1,0 +1,53 @@
+<html>
+
+<head>
+  	
+<style>
+  .red {
+    background-color: red;
+  }
+</style>
+
+</head>
+
+    <body>
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>  
+
+
+        <header>
+        
+            <ul>
+                <li class="first">Item 1</li>
+                <li class="selected">Item 2</li>
+                <li class="last">Item 3</li>
+            </ul>
+
+        </header>
+        <div class="col">
+            <section>
+                <h2>Section 1</h2>
+            </section>
+            <section class="current">
+                <h2 class="highlight">Section 2</h2>
+            </section>
+            <section>
+                <h1>Section 3</h1>
+            </section>
+        </div>
+
+    
+<script>
+var header = $("header");
+$("section").find("*");
+var current = $("div.col > li.current");
+current.next();
+$(".highlight").parent().parent();
+var allH2 = $("section");
+
+</script>
+    </body>
+</html>
